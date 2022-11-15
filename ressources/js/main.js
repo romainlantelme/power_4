@@ -135,7 +135,7 @@ function check_win(i, j) {
     }
 
     setTimeout(() => {
-        let sound = Audio("../sound/soundWin.mp3");
+        let sound = new Audio("../sound/soundWin.mp3");
         sound.play();
         alert(`${winner} A GAGNÉ LA PARTIE !`);
         document.getElementById("scorePlayer1").innerHTML = scorePlayer1;
