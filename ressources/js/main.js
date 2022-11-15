@@ -133,11 +133,10 @@ function check_win(i, j) {
       scorePlayer2++;
       winner = document.getElementById("player2").value;
     }
-    
-    let sound = Audio(../sound/soundWin.mp3);
-    sound.play();
 
     setTimeout(() => {
+        let sound = Audio(../sound/soundWin.mp3);
+        sound.play();
         alert(`${winner} A GAGNÉ LA PARTIE !`);
         document.getElementById("scorePlayer1").innerHTML = scorePlayer1;
         document.getElementById("scorePlayer2").innerHTML = scorePlayer2;
