@@ -4,7 +4,7 @@ const N_COLUMNS = 7;
 let player = 1;
 let countTurn = 0;
 let board = new Array();
-let sound = Audio("../sound/soundWin.mp3");
+let sound = new Audio("../sound/soundWin.mp3");
 let scorePlayer1 = document.getElementById("scorePlayer1").innerHTML;
 let scorePlayer2 = document.getElementById("scorePlayer2").innerHTML;
 
