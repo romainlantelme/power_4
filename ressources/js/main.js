@@ -134,7 +134,7 @@ function check_win(i, j) {
       winner = document.getElementById("player2").value;
     }
     
-    let sound = Audio("../sound/soundWin.mp3");
+    let sound = Audio(../sound/soundWin.mp3);
     sound.play();
 
     setTimeout(() => {
