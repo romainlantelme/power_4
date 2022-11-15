@@ -4,7 +4,6 @@ const N_COLUMNS = 7;
 let player = 1;
 let countTurn = 0;
 let board = new Array();
-let sound = new Audio("../sound/soundWin.mp3");
 let scorePlayer1 = document.getElementById("scorePlayer1").innerHTML;
 let scorePlayer2 = document.getElementById("scorePlayer2").innerHTML;
 
@@ -135,8 +134,6 @@ function check_win(i, j) {
     }
 
     setTimeout(() => {
-        let sound = new Audio("../sound/soundWin.mp3");
-        sound.play();
         alert(`${winner} A GAGNÉ LA PARTIE !`);
         document.getElementById("scorePlayer1").innerHTML = scorePlayer1;
         document.getElementById("scorePlayer2").innerHTML = scorePlayer2;
